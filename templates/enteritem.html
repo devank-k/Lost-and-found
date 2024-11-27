@@ -1,0 +1,44 @@
+{% extends 'base.html' %} {% block title %}ENTER ITEM{% endblock %} {% block body %}
+<div class="container itemgodown">
+	<div class="row justify-content-center">
+		<div class="col-sm-6">
+			<div class="card mt-5 p-4 border border-white border-4 rounded">
+				<h2 class="text-uppercase text-center my-3 p-3 border border-white border-4 rounded fw-bolder">
+					Item Entry
+				</h2>
+				<form action="/enteritem" class="row g-3 down" method="POST">
+					<div class="col-md-12">
+						<label for="validationCustom01" class="form-label fw-bold">Item Name:</label>
+						<input type="text" class="form-control" id="validationCustom01" name="name" required />
+					</div>
+					<div class="col-md-12">
+						<label for="validationCustom04" class="form-label fw-bold">Place Found:</label>
+						<input type="text" class="form-control" id="validationCustom04" name="place" required />
+					</div>
+					<div class="col-md-12">
+						<label for="myInput" class="form-label fw-bold">Date Found:</label>
+						<input type="date" class="form-control" id="myinput4" name="date" required />
+					</div>
+					<div class="col-md-12">
+						<label for="myInput" class="form-label fw-bold">Description:</label>
+						<textarea class="form-control" name="desc" rows="3" placeholder="Your Text here."></textarea>
+					</div>
+					<div class="container text-center">
+						<button class="btn btn-lg bttn mb-4 fw-bold" type="submit" style="background-color: #66fcf1;z-index: 5;">
+							ADD ITEM
+						</button>
+					</div>
+				</form>
+				<div class="row linksgodown">
+					<div class="col-6 links">
+						<a href="/logout">Logout <i class="fas fa-sign-out-alt"></i></a>
+					</div>
+					<div class="col-6 links" style="text-align: right">
+						<a href="/updateitem">Update Items <i class="fas fa-arrow-right"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock body %}

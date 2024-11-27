@@ -1,0 +1,37 @@
+{% extends 'base.html' %} {% block title %}STATION LOGIN{% endblock %} {% block body %}
+<div class="container godown">
+	<div class="row justify-content-center">
+		<div class="col-sm-6">
+			<div class="card mt-5 p-4 border border-white border-4 rounded">
+				<h2 class="text-uppercase text-center my-3 p-3 border border-white border-4 rounded fw-bolder">
+					Station Login
+				</h2>
+				<br />
+				<form action="/login" class="row g-3" method="POST">
+					<div class="col-md-12">
+						<label for="validationCustom04" class="form-label fw-bold">Email:</label>
+						<input type="email" class="form-control" id="validationCustom04" name="email" required />
+					</div>
+					<div class="col-md-12">
+						<label for="myInput" class="form-label fw-bold">Password:</label>
+						<input type="password" class="form-control" id="myinput4" name="pass1" required />
+					</div>
+					<div class="col-md-12 text-center">
+						<button class="btn btn-lg mb-4 fw-bold" type="submit" style="background-color: #66fcf1; z-index: 5;">
+							LOGIN
+						</button>
+					</div>
+				</form>
+				<div class="row linksgodown">
+					<div class="col-6 links">
+						<a href="/"><i class="fas fa-arrow-left"></i> Home</a>
+					</div>
+					<div class="col-6 links" style="text-align: right">
+						<a href="/signup_form">New station?Click to SignUp <i class="fas fa-arrow-right"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock body %}

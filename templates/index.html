@@ -1,0 +1,39 @@
+{% extends 'base.html' %} {% block title %}LOST & FOUND{% endblock %} {% block body %}
+<div class="container mt-3 bluecl">
+	<h1 class="text-center fw-bold text-uppercase mb-5 display-1">Lost and found</h1>
+	<div class="row">
+		<div class="col-md-6 detective mt-5">
+			<img src="../static/images/detective.jpg" alt="detective" />
+		</div>
+		<div class="col-md-6 opt">
+			<div class="text-center mb-4">
+				<h2 class="text-uppercase display-3">Who are you?</h2>
+			</div>
+			<div class="goright">
+				<div class="mb-4">
+					<a class="text-decoration-none text-primary" href="/login_form">
+						<div class="mt-2 border border-5 zooom sml">
+							<div class="text-center">
+								<img class="ikon m-3" src="../static/images/cop.png" alt="cop" />
+							</div>
+							<div class="text-center">
+								<p class="d-inline display-4 text-uppercase" style="color: #66fcf1">Found an Item</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<a class="text-decoration-none text-primary" href="/viewitem">
+					<div class="mt-2 border border-5 zooom sml">
+						<div class="text-center">
+							<img class="ikon m-3" src="../static/images/citizen.png" alt="citizen" />
+						</div>
+						<div class="text-center">
+							<p class="d-inline display-4 text-uppercase" style="color: #66fcf1">Lost an Item</p>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock body %}
